@@ -71,7 +71,7 @@ public class MemoryCache<T> implements Cache<T> {
         this.mostRecentlyReadKeys.remove(key);
         this.mostRecentlyReadKeys.addLast(key);
 
-        return new CacheResult(false, item.value);
+        return new CacheResult(true, item.value);
     }
 
     /**

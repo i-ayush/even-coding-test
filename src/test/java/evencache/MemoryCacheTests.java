@@ -51,8 +51,8 @@ class MemoryCacheTests {
 
         // Should be able to keep reading the items; they shouldn't be evicted.
 
-        assertCachedEquals(cache, "a", a);
-        assertCachedEquals(cache, "b", b);
+        assertCachedEquals(cache, "a", "A");
+        assertCachedEquals(cache, "b", "B");
 
         // We should be able to clear items from the cache too.
         // Other items should remain in the cache.
